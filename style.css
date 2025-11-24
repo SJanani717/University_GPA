@@ -1,0 +1,664 @@
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #5d285d;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon, .user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.uov-logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+.uov-titles p {
+    margin: 5px 0;
+    font-family: serif;
+    font-size: 16px;
+}
+
+.welcome-text h1, .welcome-text h2 {
+    margin: 0;
+    font-family: serif;
+}
+
+.welcome-text h2 {
+    color: #5d285d;
+    font-size: 2.5em;
+}
+
+.welcome-text h1 {
+    font-size: 3.5em;
+    color: #000;
+}
+
+.project-title p {
+    margin: 5px 0;
+    color: #5d285d;
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+/* Next Button */
+.next-button-container {
+    text-align: right;
+    padding: 20px;
+}
+
+.next-button {
+    background-color: #5d285d;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Add this to remove the underline from the link */
+    display: inline-block; /* Make the link behave like a block element for styling */
+}
+
+/* Style for the icons */
+.menu-icon, .user-icon {
+    font-size: 24px; /* Adjust the size as needed */
+    color: white;   /* Set the icon color to match your design */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.back-button {
+    background-color: #5d285d;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-content ul {
+    list-style-type: disc; /* Use discs for the bullet points */
+    list-style-position: inside; /* Positions the bullet points inside the list item */
+    padding-left: 20px; /* Adjust padding to control the bullet point position */
+    text-align: left; /* Align the text to the left */
+}
+
+.main-content ul li {
+    font-family: serif;
+    font-size: 1.5em;
+    color: #5d285d;
+    margin-bottom: 20px;
+}
+.faculty-heading h1 {
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #5d285d;
+    font-family: serif;
+    margin-bottom: 20px;
+}
+/* Style for the welcome message heading */
+.welcome-message h1 {
+    font-size: 2em;
+    color: #5d285d;
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Container for the role buttons */
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the buttons */
+    margin-top: 50px;
+}
+
+/* Style for each role button */
+.role-button {
+    background-color: #ffffff;
+    color: #5d285d;
+    border: 1px solid #5d285d;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.role-button:hover {
+    background-color: #f0f0f0;
+}
+/* Container for the role buttons */
+.role-buttons {
+    /* Adjusting the gap to make buttons closer */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced space between the buttons */
+    margin-top: 50px;
+}
+
+/* Style for each role button */
+.role-button {
+    /* Change background color to a light pink/off-white */
+    background-color: #f9f6f6;
+    color: #5d285d;
+    border: 1px solid #5d285d;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px; /* Increased border-radius for more rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.role-button:hover {
+    background-color: #f0f0f0;
+}
+/* Style for the welcome message heading */
+/* New rule for the centered main content */
+.main-content-center {
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    flex-grow: 1; /* Allows the content to fill the page */
+    text-align: center;
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+    font-size: 2em;
+    color: #5d285d;
+    font-family: serif;
+    margin-bottom: 50px; /* Adds space between heading and buttons */
+}
+
+/* Container for the role buttons */
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Reduced space between the buttons */
+}
+/* Style for the centered login content */
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-header h2 {
+    font-size: 1.5em;
+    color: #5d285d;
+    font-family: serif;
+    margin-bottom: 5px;
+}
+
+.login-header h1 {
+    font-size: 2em;
+    color: #5d285d;
+    font-family: serif;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+/* Style for the login form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+.form-group {
+    position: relative;
+    text-align: right;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #5d285d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: white;
+    font-size: 1.0em;
+    font-weight:normal;
+}
+
+.lost-password {
+    color: #5d285d;
+    text-decoration: underline;
+    font-size: 0.7em;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-button, .back-button-login {
+    background-color: #5d285d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-button-login {
+    background-color: #5d285d;
+    color: white;
+}
+/* Container for the entire dashboard layout */
+.dashboard-container {
+    display: flex;
+    min-height: calc(100vh - 60px); /* Adjust based on your header's height */
+}
+
+/* Sidebar styling */
+/* Sidebar styling */
+/* Corrected Sidebar styling */
+/* Sidebar styling */
+.sidebar {
+    width: 300px;
+    background-color: #5d285d;
+    padding: 20px;
+    color: white;
+    /* Use Flexbox to manage the layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Use Flexbox with 'gap' for consistent spacing between menu items */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* This creates a 30px space between each item */
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+.sidebar li a i {
+    margin-right: 10px;
+}
+
+/* Logout button container to align it to the right */
+.logout-btn-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: white;
+    color: #5d285d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+/* Ensure the body and html elements take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 300px;
+    background-color: #5d285d;
+    padding: 20px;
+    color: white;
+    /* Use Flexbox to manage the layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Add this line to make the sidebar full height */
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Use Flexbox with 'gap' for consistent spacing between menu items */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* This creates a 30px space between each item */
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+.sidebar li a i {
+    margin-right: 10px;
+}
+
+/* Logout button container to align it to the right */
+.logout-btn-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: white;
+    color: #5d285d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Adjust the space between the buttons */
+    margin-top: 20px;
+}
+/* Style for the container holding the user role buttons */
+/* Container to center the user role buttons */
+/* Center the main content */
+.user-role-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.user-role-header h1 {
+    font-size: 2em;
+    color: #5d285d;
+}
+
+/* Container for the user role buttons */
+.user-role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Styling for the user role buttons */
+.user-role-buttons button {
+    background-color: white;
+    color: #5d285d;
+    padding: 15px 30px;
+    border: 2px solid #5d285d;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for user role buttons */
+.user-role-buttons button:hover {
+    background-color: #5d285d;
+    color: white;
+}
+
+/* Position and style for the bottom navigation buttons */
+.bottom-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the individual bottom buttons */
+.bottom-buttons a {
+    text-decoration: none;
+}
+
+.back-button, .next-button {
+    background-color: #5d285d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.student-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.student-form .form-row label {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+    color: #5d285d;
+    font-size: 1.1em;
+}
+
+.student-form .form-row input,
+.student-form .form-row select {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-actions-right {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #5d285d;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dashboard-main-container {
+    display: flex;
+    height: 100%;
+}
+
+.main-content {
+    flex-grow: 1; /* This makes the content area fill the remaining space */
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.result-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.result-form .form-row label {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+    color: #5d285d;
+    font-size: 1.1em;
+}
+
+.result-form .form-row input,
+.result-form .form-row select {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-actions-right {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #5d285d;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Main Content Area */
+.dashboard-main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f0f2f5;
+    overflow-y: auto;
+}
+
+#content-display {
+    align-content: center;
+    padding: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#content-display h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#content-display p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
