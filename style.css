@@ -1,4 +1,57 @@
 /* General Body and Layout */
+/* --- USER ROLE PAGE BUTTONS --- */
+
+/* Centers the Admin, Lecturer, and Student buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px; /* Adjusts space below the title */
+}
+
+/* Styles the buttons with the purple outline */
+.btn {
+    text-decoration: none;
+    color: #5d2a5f;
+    border: 2px solid #5d2a5f;
+    padding: 12px 45px;
+    border-radius: 30px; /* Makes the buttons pill-shaped/rounded */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    background-color: transparent;
+    display: inline-block;
+}
+
+/* Changes button color when you hover over it */
+.btn:hover {
+    background-color: #5d2a5f;
+    color: white;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Fixes the Top Navigation Links alignment */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5d2a5f;
+    padding: 15px 40px;
+    color: white;
+}
+
+.top-nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.top-nav-links a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -143,6 +196,28 @@ nav a {
     font-family: serif;
     margin-bottom: 20px;
 }
+.faculty-buttons {
+    display: flex;
+    flex-direction: column; /* This stacks buttons vertically */
+    align-items: center;    /* This centers them horizontally */
+    gap: 20px;             /* This adds space between the buttons */
+    margin-top: 50px;
+}
+
+.faculty-buttons button {
+    width: 350px;          /* Makes all buttons the same width */
+    padding: 15px;
+    background-color: #5d285d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faculty-buttons button:hover {
+    background-color: #4a1f4a;
+}
 /* Style for the welcome message heading */
 .welcome-message h1 {
     font-size: 2em;
@@ -153,11 +228,11 @@ nav a {
 }
 
 /* Container for the role buttons */
-.role-buttons {
+.user-role-buttons {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between the buttons */
-    margin-top: 50px;
+    gap: 30px; /* This adds a nice space between the two remaining buttons */
+    margin-top: 60px;
 }
 
 /* Style for each role button */
