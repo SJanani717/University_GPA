@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Role</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-nav">
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <div class="user-icon"><i class="fas fa-user-circle"></i></div>
+        </div>
+    </header>
+
+    <main class="user-role-content">
+        <div class="user-role-header">
+            <h1 id="faculty-title">Faculty of Technological Studies Grading System</h1>
+        </div>
+        
+        <div class="user-role-buttons">
+            <a href="login.php" class="role-link">
+                <button type="button">Admin</button>
+            </a>
+            
+            <a href="student_login.php" class="role-link">
+                <button type="button">Student</button>
+            </a>
+        </div>
+    </main>
+
+    <div class="bottom-buttons">
+        <a href="index.html" class="back-button">Back</a>
+        <a href="#" class="next-button">Next</a>
+    </div>
+
+    <script>
+        // Get the name from the URL parameter (e.g., ?name=Business Studies)
+        const urlParams = new URLSearchParams(window.location.search);
+        const facultyName = urlParams.get('name');
+
+        // If a name exists, update the text of the h1
+        if (facultyName) {
+            const titleElement = document.getElementById('faculty-title');
+            if (titleElement) {
+                titleElement.innerText = "Faculty of " + facultyName + " Grading System";
+            }
+        }
+    </script>
+</body>
+</html>
